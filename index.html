@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
 
 
   </head>
@@ -33,10 +35,18 @@ body {
       .jumbotron h1 {
         font-size: 100px;
         line-height: 1;
+        animation-name: fadeInDown;
+        animation-duration:1s;
+        -webkit-animation-name:fadeInDown;
+        -webkit-animation-duration:1s;
       }
       .jumbotron .lead {
         font-size: 32px;
         line-height: 1.25;
+        animation-name: fadeInUp;
+        animation-duration:2s;
+        -webkit-animation-name:fadeInUp;
+        -webkit-animation-duration:2s;
       }
 
 }
@@ -45,19 +55,29 @@ body {
 		text-align: center;
 	}
 #shit {
-	visibility:visible;
+	visibility:hidden;
+  color:#ECF0F1;
 }
 
-#video {
-	visibility:visible;
+#poop{
+  visibility:visible;
 }
 
 #input {
   width:505px;
+   animation-name: fadeInLeft;
+        animation-duration:2s;
+        -webkit-animation-name:fadeInLeft;
+        -webkit-animation-duration:2s;
+
 }
 
 form .btn {
 	font-size: 17px;
+  animation-name:fadeInRight;
+  animation-duration:2s;
+  -webkit-animation-name:fadeInRight;
+  -webkit-animation-duration:2s;
 }
 
 </style>
@@ -76,10 +96,8 @@ form .btn {
 
 <div class="row-fluid">
     <div class="span12" align="center">
-    	<form>
-      
+    	<form id='poop'>
           <input type="text" id="input"class="form-control input-hg" placeholder="Enter a Crappy Band..." />
-      
     			<p></p>
     			<p>
               <button class="btn btn-hg btn-primary">
@@ -88,11 +106,11 @@ form .btn {
           </p>
     	</form>
     </div>
-<!--
-    <div class="span6" align="center">
-    	<h2 id="shit">Here's Something "Better"</h2>
+
+    <div class="span12" id="shit" align="center">
+    	<h2>Here's Something "Better"</h2>
     	<embed id="video" width="420" height="315" src="http://www.youtube.com/v/kKO9h-gG4Qg"type="application/x-shockwave-flash">
-		</embed>-->
+		</embed>
 		<!--
     	<iframe id="video" width="420" height="315" src="http://www.youtube.com/embed/kKO9h-gG4Qg?autoplay=1" frameborder="0" allowfullscreen></iframe>-->
     </div>
