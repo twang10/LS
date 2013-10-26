@@ -4,16 +4,13 @@
     <title>Lamestream</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-
-
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
 
 <style>
 
 body {
-        padding-bottom: 30px;
-        background-color:#8E44AD;
+        padding-bottom: 60px;
       }
 
       /* Custom container */
@@ -28,7 +25,6 @@ body {
 .jumbotron {
         margin: 80px 0;
         text-align: center;
-        color:#ECF0F1;
       }
       .jumbotron h1 {
         font-size: 100px;
@@ -37,6 +33,10 @@ body {
       .jumbotron .lead {
         font-size: 32px;
         line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
       }
 
 }
@@ -52,12 +52,18 @@ body {
 	visibility:visible;
 }
 
-#input {
-  width:505px;
+fieldset {
+	padding-top: 100px;
 }
 
-form .btn {
+fieldset .input-xlarge {
+	font-size: 125%;
+	padding: 10px 10px;
+}
+
+fieldset .btn {
 	font-size: 17px;
+	padding:10px 20px;
 }
 
 </style>
@@ -70,29 +76,27 @@ form .btn {
   <div class="jumbotron">
   	<h1>Lamestream</h1>
   	<p class="lead">We Know Shitty Music</p>
+  	<a class="btn" href="#start">Get Started</a>
   </div>
 
-
+<hr>
 
 <div class="row-fluid">
-    <div class="span12" align="center">
+    <div class="span6" align="center">
+    	<h2 id="start">Enter a Shit Song:</h2></a>
     	<form>
-      
-          <input type="text" id="input"class="form-control input-hg" placeholder="Enter a Crappy Band..." />
-      
+    		<fieldset>
+    			<input class="input-xlarge" type="text" placeholder="Do it...">
     			<p></p>
-    			<p>
-              <button class="btn btn-hg btn-primary">
-              Submit
-              </button>
-          </p>
+    			<p><button type="submit" class="btn" href="#">Submit</button></p>
+    		</fieldset>
     	</form>
     </div>
-<!--
+
     <div class="span6" align="center">
     	<h2 id="shit">Here's Something "Better"</h2>
     	<embed id="video" width="420" height="315" src="http://www.youtube.com/v/kKO9h-gG4Qg"type="application/x-shockwave-flash">
-		</embed>-->
+		</embed>
 		<!--
     	<iframe id="video" width="420" height="315" src="http://www.youtube.com/embed/kKO9h-gG4Qg?autoplay=1" frameborder="0" allowfullscreen></iframe>-->
     </div>

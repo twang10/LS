@@ -4,13 +4,13 @@
     <title>Lamestream</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/flat-ui.css" rel="stylesheet">
   </head>
 
 <style>
 
 body {
-        padding-bottom: 60px;
+        padding-bottom: 30px;
       }
 
       /* Custom container */
@@ -52,13 +52,9 @@ body {
 	visibility:visible;
 }
 
-form .enter {
-	font-size: 125%;
-  display: block;
-  border: none;
-  color: #333;
-  background: transparent;
-  border-bottom: 1px dotted black;
+#enter {
+  width:500px;
+  color:#34495E;
 }
 
 form .btn {
@@ -82,7 +78,7 @@ form .btn {
 <div class="row-fluid">
     <div class="span12" align="center">
     	<form>
-    			<input class="enter" type="text" placeholder="Enter a Shit Song...">
+          <input type="text" id="enter" class="form-control input-hg"  placeholder="Enter a Shit Song..." />
     			<p></p>
     			<p><button type="submit" class="btn" href="#">Submit</button></p>
     	</form>
