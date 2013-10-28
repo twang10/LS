@@ -10,6 +10,16 @@
  
 
     <script>
+  //Enter Stopper
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
     var shit = new Array('rebecca black', 'black dice', 'j dash');
     var random = Math.floor(Math.random() * shit.length);
     random = shit[random]; // 2
